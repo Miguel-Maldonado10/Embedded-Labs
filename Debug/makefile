@@ -8,67 +8,67 @@ GEN_OPTS__FLAG := @"./device.opt"
 GEN_CMDS__FLAG := -Wl,-T"./device_linker.lds" 
 
 ORDERED_OBJS += \
-"./empty.o" \
+"./Lab1/empty.o" \
 "./ti_msp_dl_config.o" \
 "./startup_mspm0g350x_gcc.o" \
-"./ti/driverlib/dl_adc12.o" \
-"./ti/driverlib/dl_aes.o" \
-"./ti/driverlib/dl_aesadv.o" \
-"./ti/driverlib/dl_common.o" \
-"./ti/driverlib/dl_comp.o" \
-"./ti/driverlib/dl_crc.o" \
-"./ti/driverlib/dl_crcp.o" \
-"./ti/driverlib/dl_dac12.o" \
-"./ti/driverlib/dl_dma.o" \
-"./ti/driverlib/dl_flashctl.o" \
-"./ti/driverlib/dl_gpamp.o" \
-"./ti/driverlib/dl_gpio.o" \
-"./ti/driverlib/dl_i2c.o" \
-"./ti/driverlib/dl_i2s.o" \
-"./ti/driverlib/dl_iwdt.o" \
-"./ti/driverlib/dl_keystorectl.o" \
-"./ti/driverlib/dl_lcd.o" \
-"./ti/driverlib/dl_lfss.o" \
-"./ti/driverlib/dl_mathacl.o" \
-"./ti/driverlib/dl_mcan.o" \
-"./ti/driverlib/dl_npu.o" \
-"./ti/driverlib/dl_opa.o" \
-"./ti/driverlib/dl_rtc.o" \
-"./ti/driverlib/dl_rtc_a.o" \
-"./ti/driverlib/dl_rtc_b.o" \
-"./ti/driverlib/dl_rtc_common.o" \
-"./ti/driverlib/dl_scratchpad.o" \
-"./ti/driverlib/dl_spgss.o" \
-"./ti/driverlib/dl_spi.o" \
-"./ti/driverlib/dl_tamperio.o" \
-"./ti/driverlib/dl_timer.o" \
-"./ti/driverlib/dl_timera.o" \
-"./ti/driverlib/dl_timerb.o" \
-"./ti/driverlib/dl_timerg.o" \
-"./ti/driverlib/dl_trng.o" \
-"./ti/driverlib/dl_uart.o" \
-"./ti/driverlib/dl_unicomm.o" \
-"./ti/driverlib/dl_unicommi2cc.o" \
-"./ti/driverlib/dl_unicommi2ct.o" \
-"./ti/driverlib/dl_unicommspi.o" \
-"./ti/driverlib/dl_unicommuart.o" \
-"./ti/driverlib/dl_vref.o" \
-"./ti/driverlib/dl_wwdt.o" \
-"./ti/driverlib/m0p/dl_factoryregion.o" \
-"./ti/driverlib/m0p/dl_interrupt.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.o" \
-"./ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.o" \
+"./Lab1/ti/driverlib/dl_adc12.o" \
+"./Lab1/ti/driverlib/dl_aes.o" \
+"./Lab1/ti/driverlib/dl_aesadv.o" \
+"./Lab1/ti/driverlib/dl_common.o" \
+"./Lab1/ti/driverlib/dl_comp.o" \
+"./Lab1/ti/driverlib/dl_crc.o" \
+"./Lab1/ti/driverlib/dl_crcp.o" \
+"./Lab1/ti/driverlib/dl_dac12.o" \
+"./Lab1/ti/driverlib/dl_dma.o" \
+"./Lab1/ti/driverlib/dl_flashctl.o" \
+"./Lab1/ti/driverlib/dl_gpamp.o" \
+"./Lab1/ti/driverlib/dl_gpio.o" \
+"./Lab1/ti/driverlib/dl_i2c.o" \
+"./Lab1/ti/driverlib/dl_i2s.o" \
+"./Lab1/ti/driverlib/dl_iwdt.o" \
+"./Lab1/ti/driverlib/dl_keystorectl.o" \
+"./Lab1/ti/driverlib/dl_lcd.o" \
+"./Lab1/ti/driverlib/dl_lfss.o" \
+"./Lab1/ti/driverlib/dl_mathacl.o" \
+"./Lab1/ti/driverlib/dl_mcan.o" \
+"./Lab1/ti/driverlib/dl_npu.o" \
+"./Lab1/ti/driverlib/dl_opa.o" \
+"./Lab1/ti/driverlib/dl_rtc.o" \
+"./Lab1/ti/driverlib/dl_rtc_a.o" \
+"./Lab1/ti/driverlib/dl_rtc_b.o" \
+"./Lab1/ti/driverlib/dl_rtc_common.o" \
+"./Lab1/ti/driverlib/dl_scratchpad.o" \
+"./Lab1/ti/driverlib/dl_spgss.o" \
+"./Lab1/ti/driverlib/dl_spi.o" \
+"./Lab1/ti/driverlib/dl_tamperio.o" \
+"./Lab1/ti/driverlib/dl_timer.o" \
+"./Lab1/ti/driverlib/dl_timera.o" \
+"./Lab1/ti/driverlib/dl_timerb.o" \
+"./Lab1/ti/driverlib/dl_timerg.o" \
+"./Lab1/ti/driverlib/dl_trng.o" \
+"./Lab1/ti/driverlib/dl_uart.o" \
+"./Lab1/ti/driverlib/dl_unicomm.o" \
+"./Lab1/ti/driverlib/dl_unicommi2cc.o" \
+"./Lab1/ti/driverlib/dl_unicommi2ct.o" \
+"./Lab1/ti/driverlib/dl_unicommspi.o" \
+"./Lab1/ti/driverlib/dl_unicommuart.o" \
+"./Lab1/ti/driverlib/dl_vref.o" \
+"./Lab1/ti/driverlib/dl_wwdt.o" \
+"./Lab1/ti/driverlib/m0p/dl_factoryregion.o" \
+"./Lab1/ti/driverlib/m0p/dl_interrupt.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.o" \
+"./Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.o" \
 $(GEN_CMDS__FLAG) \
 -Wl,-Tdevice.lds.genlibs \
 -l:driverlib.a \
@@ -83,14 +83,14 @@ RMDIR := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include subdir_vars.mk
--include ti/driverlib/subdir_vars.mk
--include ti/driverlib/m0p/subdir_vars.mk
--include ti/driverlib/m0p/sysctl/subdir_vars.mk
--include subdir_rules.mk
--include ti/driverlib/subdir_rules.mk
--include ti/driverlib/m0p/subdir_rules.mk
--include ti/driverlib/m0p/sysctl/subdir_rules.mk
+-include Lab1/subdir_vars.mk
+-include Lab1/ti/driverlib/subdir_vars.mk
+-include Lab1/ti/driverlib/m0p/subdir_vars.mk
+-include Lab1/ti/driverlib/m0p/sysctl/subdir_vars.mk
+-include Lab1/subdir_rules.mk
+-include Lab1/ti/driverlib/subdir_rules.mk
+-include Lab1/ti/driverlib/m0p/subdir_rules.mk
+-include Lab1/ti/driverlib/m0p/sysctl/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -200,10 +200,12 @@ empty_driverlib_src.out: $(OBJS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_gcc.o" "ti/driverlib/dl_adc12.o" "ti/driverlib/dl_aes.o" "ti/driverlib/dl_aesadv.o" "ti/driverlib/dl_common.o" "ti/driverlib/dl_comp.o" "ti/driverlib/dl_crc.o" "ti/driverlib/dl_crcp.o" "ti/driverlib/dl_dac12.o" "ti/driverlib/dl_dma.o" "ti/driverlib/dl_flashctl.o" "ti/driverlib/dl_gpamp.o" "ti/driverlib/dl_gpio.o" "ti/driverlib/dl_i2c.o" "ti/driverlib/dl_i2s.o" "ti/driverlib/dl_iwdt.o" "ti/driverlib/dl_keystorectl.o" "ti/driverlib/dl_lcd.o" "ti/driverlib/dl_lfss.o" "ti/driverlib/dl_mathacl.o" "ti/driverlib/dl_mcan.o" "ti/driverlib/dl_npu.o" "ti/driverlib/dl_opa.o" "ti/driverlib/dl_rtc.o" "ti/driverlib/dl_rtc_a.o" "ti/driverlib/dl_rtc_b.o" "ti/driverlib/dl_rtc_common.o" "ti/driverlib/dl_scratchpad.o" "ti/driverlib/dl_spgss.o" "ti/driverlib/dl_spi.o" "ti/driverlib/dl_tamperio.o" "ti/driverlib/dl_timer.o" "ti/driverlib/dl_timera.o" "ti/driverlib/dl_timerb.o" "ti/driverlib/dl_timerg.o" "ti/driverlib/dl_trng.o" "ti/driverlib/dl_uart.o" "ti/driverlib/dl_unicomm.o" 
-	-$(RM) "ti/driverlib/dl_unicommi2cc.o" "ti/driverlib/dl_unicommi2ct.o" "ti/driverlib/dl_unicommspi.o" "ti/driverlib/dl_unicommuart.o" "ti/driverlib/dl_vref.o" "ti/driverlib/dl_wwdt.o" "ti/driverlib/m0p/dl_factoryregion.o" "ti/driverlib/m0p/dl_interrupt.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.o" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.o" 
-	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_gcc.d" "ti/driverlib/dl_adc12.d" "ti/driverlib/dl_aes.d" "ti/driverlib/dl_aesadv.d" "ti/driverlib/dl_common.d" "ti/driverlib/dl_comp.d" "ti/driverlib/dl_crc.d" "ti/driverlib/dl_crcp.d" "ti/driverlib/dl_dac12.d" "ti/driverlib/dl_dma.d" "ti/driverlib/dl_flashctl.d" "ti/driverlib/dl_gpamp.d" "ti/driverlib/dl_gpio.d" "ti/driverlib/dl_i2c.d" "ti/driverlib/dl_i2s.d" "ti/driverlib/dl_iwdt.d" "ti/driverlib/dl_keystorectl.d" "ti/driverlib/dl_lcd.d" "ti/driverlib/dl_lfss.d" "ti/driverlib/dl_mathacl.d" "ti/driverlib/dl_mcan.d" "ti/driverlib/dl_npu.d" "ti/driverlib/dl_opa.d" "ti/driverlib/dl_rtc.d" "ti/driverlib/dl_rtc_a.d" "ti/driverlib/dl_rtc_b.d" "ti/driverlib/dl_rtc_common.d" "ti/driverlib/dl_scratchpad.d" "ti/driverlib/dl_spgss.d" "ti/driverlib/dl_spi.d" "ti/driverlib/dl_tamperio.d" "ti/driverlib/dl_timer.d" "ti/driverlib/dl_timera.d" "ti/driverlib/dl_timerb.d" "ti/driverlib/dl_timerg.d" "ti/driverlib/dl_trng.d" "ti/driverlib/dl_uart.d" "ti/driverlib/dl_unicomm.d" 
-	-$(RM) "ti/driverlib/dl_unicommi2cc.d" "ti/driverlib/dl_unicommi2ct.d" "ti/driverlib/dl_unicommspi.d" "ti/driverlib/dl_unicommuart.d" "ti/driverlib/dl_vref.d" "ti/driverlib/dl_wwdt.d" "ti/driverlib/m0p/dl_factoryregion.d" "ti/driverlib/m0p/dl_interrupt.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.d" "ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.d" 
+	-$(RM) "Lab1/empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_gcc.o" "Lab1/ti/driverlib/dl_adc12.o" "Lab1/ti/driverlib/dl_aes.o" "Lab1/ti/driverlib/dl_aesadv.o" "Lab1/ti/driverlib/dl_common.o" "Lab1/ti/driverlib/dl_comp.o" "Lab1/ti/driverlib/dl_crc.o" "Lab1/ti/driverlib/dl_crcp.o" "Lab1/ti/driverlib/dl_dac12.o" "Lab1/ti/driverlib/dl_dma.o" "Lab1/ti/driverlib/dl_flashctl.o" "Lab1/ti/driverlib/dl_gpamp.o" "Lab1/ti/driverlib/dl_gpio.o" "Lab1/ti/driverlib/dl_i2c.o" "Lab1/ti/driverlib/dl_i2s.o" "Lab1/ti/driverlib/dl_iwdt.o" "Lab1/ti/driverlib/dl_keystorectl.o" "Lab1/ti/driverlib/dl_lcd.o" "Lab1/ti/driverlib/dl_lfss.o" "Lab1/ti/driverlib/dl_mathacl.o" "Lab1/ti/driverlib/dl_mcan.o" "Lab1/ti/driverlib/dl_npu.o" "Lab1/ti/driverlib/dl_opa.o" "Lab1/ti/driverlib/dl_rtc.o" "Lab1/ti/driverlib/dl_rtc_a.o" "Lab1/ti/driverlib/dl_rtc_b.o" "Lab1/ti/driverlib/dl_rtc_common.o" "Lab1/ti/driverlib/dl_scratchpad.o" "Lab1/ti/driverlib/dl_spgss.o" "Lab1/ti/driverlib/dl_spi.o" "Lab1/ti/driverlib/dl_tamperio.o" "Lab1/ti/driverlib/dl_timer.o" 
+	-$(RM) "Lab1/ti/driverlib/dl_timera.o" "Lab1/ti/driverlib/dl_timerb.o" "Lab1/ti/driverlib/dl_timerg.o" "Lab1/ti/driverlib/dl_trng.o" "Lab1/ti/driverlib/dl_uart.o" "Lab1/ti/driverlib/dl_unicomm.o" "Lab1/ti/driverlib/dl_unicommi2cc.o" "Lab1/ti/driverlib/dl_unicommi2ct.o" "Lab1/ti/driverlib/dl_unicommspi.o" "Lab1/ti/driverlib/dl_unicommuart.o" "Lab1/ti/driverlib/dl_vref.o" "Lab1/ti/driverlib/dl_wwdt.o" "Lab1/ti/driverlib/m0p/dl_factoryregion.o" "Lab1/ti/driverlib/m0p/dl_interrupt.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.o" 
+	-$(RM) "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.o" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.o" 
+	-$(RM) "Lab1/empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_gcc.d" "Lab1/ti/driverlib/dl_adc12.d" "Lab1/ti/driverlib/dl_aes.d" "Lab1/ti/driverlib/dl_aesadv.d" "Lab1/ti/driverlib/dl_common.d" "Lab1/ti/driverlib/dl_comp.d" "Lab1/ti/driverlib/dl_crc.d" "Lab1/ti/driverlib/dl_crcp.d" "Lab1/ti/driverlib/dl_dac12.d" "Lab1/ti/driverlib/dl_dma.d" "Lab1/ti/driverlib/dl_flashctl.d" "Lab1/ti/driverlib/dl_gpamp.d" "Lab1/ti/driverlib/dl_gpio.d" "Lab1/ti/driverlib/dl_i2c.d" "Lab1/ti/driverlib/dl_i2s.d" "Lab1/ti/driverlib/dl_iwdt.d" "Lab1/ti/driverlib/dl_keystorectl.d" "Lab1/ti/driverlib/dl_lcd.d" "Lab1/ti/driverlib/dl_lfss.d" "Lab1/ti/driverlib/dl_mathacl.d" "Lab1/ti/driverlib/dl_mcan.d" "Lab1/ti/driverlib/dl_npu.d" "Lab1/ti/driverlib/dl_opa.d" "Lab1/ti/driverlib/dl_rtc.d" "Lab1/ti/driverlib/dl_rtc_a.d" "Lab1/ti/driverlib/dl_rtc_b.d" "Lab1/ti/driverlib/dl_rtc_common.d" "Lab1/ti/driverlib/dl_scratchpad.d" "Lab1/ti/driverlib/dl_spgss.d" "Lab1/ti/driverlib/dl_spi.d" "Lab1/ti/driverlib/dl_tamperio.d" "Lab1/ti/driverlib/dl_timer.d" 
+	-$(RM) "Lab1/ti/driverlib/dl_timera.d" "Lab1/ti/driverlib/dl_timerb.d" "Lab1/ti/driverlib/dl_timerg.d" "Lab1/ti/driverlib/dl_trng.d" "Lab1/ti/driverlib/dl_uart.d" "Lab1/ti/driverlib/dl_unicomm.d" "Lab1/ti/driverlib/dl_unicommi2cc.d" "Lab1/ti/driverlib/dl_unicommi2ct.d" "Lab1/ti/driverlib/dl_unicommspi.d" "Lab1/ti/driverlib/dl_unicommuart.d" "Lab1/ti/driverlib/dl_vref.d" "Lab1/ti/driverlib/dl_wwdt.d" "Lab1/ti/driverlib/m0p/dl_factoryregion.d" "Lab1/ti/driverlib/m0p/dl_interrupt.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c1105_c1106.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0c110x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g352x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g511x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g518x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx218_gx207.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0gx51x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0h321x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l111x.d" 
+	-$(RM) "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l11xx_l13xx.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l122x_l222x.d" "Lab1/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0l211x_l112x.d" 
 	-@echo ' '
 
 .PHONY: all clean dependents
