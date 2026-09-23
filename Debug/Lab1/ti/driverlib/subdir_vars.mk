@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Lab1/ti/driverlib/dl_adc12.c \
@@ -139,94 +141,94 @@ OBJS += \
 ./Lab1/ti/driverlib/dl_wwdt.o 
 
 OBJS__QUOTED += \
-"Lab1/ti/driverlib/dl_adc12.o" \
-"Lab1/ti/driverlib/dl_aes.o" \
-"Lab1/ti/driverlib/dl_aesadv.o" \
-"Lab1/ti/driverlib/dl_common.o" \
-"Lab1/ti/driverlib/dl_comp.o" \
-"Lab1/ti/driverlib/dl_crc.o" \
-"Lab1/ti/driverlib/dl_crcp.o" \
-"Lab1/ti/driverlib/dl_dac12.o" \
-"Lab1/ti/driverlib/dl_dma.o" \
-"Lab1/ti/driverlib/dl_flashctl.o" \
-"Lab1/ti/driverlib/dl_gpamp.o" \
-"Lab1/ti/driverlib/dl_gpio.o" \
-"Lab1/ti/driverlib/dl_i2c.o" \
-"Lab1/ti/driverlib/dl_i2s.o" \
-"Lab1/ti/driverlib/dl_iwdt.o" \
-"Lab1/ti/driverlib/dl_keystorectl.o" \
-"Lab1/ti/driverlib/dl_lcd.o" \
-"Lab1/ti/driverlib/dl_lfss.o" \
-"Lab1/ti/driverlib/dl_mathacl.o" \
-"Lab1/ti/driverlib/dl_mcan.o" \
-"Lab1/ti/driverlib/dl_npu.o" \
-"Lab1/ti/driverlib/dl_opa.o" \
-"Lab1/ti/driverlib/dl_rtc.o" \
-"Lab1/ti/driverlib/dl_rtc_a.o" \
-"Lab1/ti/driverlib/dl_rtc_b.o" \
-"Lab1/ti/driverlib/dl_rtc_common.o" \
-"Lab1/ti/driverlib/dl_scratchpad.o" \
-"Lab1/ti/driverlib/dl_spgss.o" \
-"Lab1/ti/driverlib/dl_spi.o" \
-"Lab1/ti/driverlib/dl_tamperio.o" \
-"Lab1/ti/driverlib/dl_timer.o" \
-"Lab1/ti/driverlib/dl_timera.o" \
-"Lab1/ti/driverlib/dl_timerb.o" \
-"Lab1/ti/driverlib/dl_timerg.o" \
-"Lab1/ti/driverlib/dl_trng.o" \
-"Lab1/ti/driverlib/dl_uart.o" \
-"Lab1/ti/driverlib/dl_unicomm.o" \
-"Lab1/ti/driverlib/dl_unicommi2cc.o" \
-"Lab1/ti/driverlib/dl_unicommi2ct.o" \
-"Lab1/ti/driverlib/dl_unicommspi.o" \
-"Lab1/ti/driverlib/dl_unicommuart.o" \
-"Lab1/ti/driverlib/dl_vref.o" \
-"Lab1/ti/driverlib/dl_wwdt.o" 
+"Lab1\ti\driverlib\dl_adc12.o" \
+"Lab1\ti\driverlib\dl_aes.o" \
+"Lab1\ti\driverlib\dl_aesadv.o" \
+"Lab1\ti\driverlib\dl_common.o" \
+"Lab1\ti\driverlib\dl_comp.o" \
+"Lab1\ti\driverlib\dl_crc.o" \
+"Lab1\ti\driverlib\dl_crcp.o" \
+"Lab1\ti\driverlib\dl_dac12.o" \
+"Lab1\ti\driverlib\dl_dma.o" \
+"Lab1\ti\driverlib\dl_flashctl.o" \
+"Lab1\ti\driverlib\dl_gpamp.o" \
+"Lab1\ti\driverlib\dl_gpio.o" \
+"Lab1\ti\driverlib\dl_i2c.o" \
+"Lab1\ti\driverlib\dl_i2s.o" \
+"Lab1\ti\driverlib\dl_iwdt.o" \
+"Lab1\ti\driverlib\dl_keystorectl.o" \
+"Lab1\ti\driverlib\dl_lcd.o" \
+"Lab1\ti\driverlib\dl_lfss.o" \
+"Lab1\ti\driverlib\dl_mathacl.o" \
+"Lab1\ti\driverlib\dl_mcan.o" \
+"Lab1\ti\driverlib\dl_npu.o" \
+"Lab1\ti\driverlib\dl_opa.o" \
+"Lab1\ti\driverlib\dl_rtc.o" \
+"Lab1\ti\driverlib\dl_rtc_a.o" \
+"Lab1\ti\driverlib\dl_rtc_b.o" \
+"Lab1\ti\driverlib\dl_rtc_common.o" \
+"Lab1\ti\driverlib\dl_scratchpad.o" \
+"Lab1\ti\driverlib\dl_spgss.o" \
+"Lab1\ti\driverlib\dl_spi.o" \
+"Lab1\ti\driverlib\dl_tamperio.o" \
+"Lab1\ti\driverlib\dl_timer.o" \
+"Lab1\ti\driverlib\dl_timera.o" \
+"Lab1\ti\driverlib\dl_timerb.o" \
+"Lab1\ti\driverlib\dl_timerg.o" \
+"Lab1\ti\driverlib\dl_trng.o" \
+"Lab1\ti\driverlib\dl_uart.o" \
+"Lab1\ti\driverlib\dl_unicomm.o" \
+"Lab1\ti\driverlib\dl_unicommi2cc.o" \
+"Lab1\ti\driverlib\dl_unicommi2ct.o" \
+"Lab1\ti\driverlib\dl_unicommspi.o" \
+"Lab1\ti\driverlib\dl_unicommuart.o" \
+"Lab1\ti\driverlib\dl_vref.o" \
+"Lab1\ti\driverlib\dl_wwdt.o" 
 
 C_DEPS__QUOTED += \
-"Lab1/ti/driverlib/dl_adc12.d" \
-"Lab1/ti/driverlib/dl_aes.d" \
-"Lab1/ti/driverlib/dl_aesadv.d" \
-"Lab1/ti/driverlib/dl_common.d" \
-"Lab1/ti/driverlib/dl_comp.d" \
-"Lab1/ti/driverlib/dl_crc.d" \
-"Lab1/ti/driverlib/dl_crcp.d" \
-"Lab1/ti/driverlib/dl_dac12.d" \
-"Lab1/ti/driverlib/dl_dma.d" \
-"Lab1/ti/driverlib/dl_flashctl.d" \
-"Lab1/ti/driverlib/dl_gpamp.d" \
-"Lab1/ti/driverlib/dl_gpio.d" \
-"Lab1/ti/driverlib/dl_i2c.d" \
-"Lab1/ti/driverlib/dl_i2s.d" \
-"Lab1/ti/driverlib/dl_iwdt.d" \
-"Lab1/ti/driverlib/dl_keystorectl.d" \
-"Lab1/ti/driverlib/dl_lcd.d" \
-"Lab1/ti/driverlib/dl_lfss.d" \
-"Lab1/ti/driverlib/dl_mathacl.d" \
-"Lab1/ti/driverlib/dl_mcan.d" \
-"Lab1/ti/driverlib/dl_npu.d" \
-"Lab1/ti/driverlib/dl_opa.d" \
-"Lab1/ti/driverlib/dl_rtc.d" \
-"Lab1/ti/driverlib/dl_rtc_a.d" \
-"Lab1/ti/driverlib/dl_rtc_b.d" \
-"Lab1/ti/driverlib/dl_rtc_common.d" \
-"Lab1/ti/driverlib/dl_scratchpad.d" \
-"Lab1/ti/driverlib/dl_spgss.d" \
-"Lab1/ti/driverlib/dl_spi.d" \
-"Lab1/ti/driverlib/dl_tamperio.d" \
-"Lab1/ti/driverlib/dl_timer.d" \
-"Lab1/ti/driverlib/dl_timera.d" \
-"Lab1/ti/driverlib/dl_timerb.d" \
-"Lab1/ti/driverlib/dl_timerg.d" \
-"Lab1/ti/driverlib/dl_trng.d" \
-"Lab1/ti/driverlib/dl_uart.d" \
-"Lab1/ti/driverlib/dl_unicomm.d" \
-"Lab1/ti/driverlib/dl_unicommi2cc.d" \
-"Lab1/ti/driverlib/dl_unicommi2ct.d" \
-"Lab1/ti/driverlib/dl_unicommspi.d" \
-"Lab1/ti/driverlib/dl_unicommuart.d" \
-"Lab1/ti/driverlib/dl_vref.d" \
-"Lab1/ti/driverlib/dl_wwdt.d" 
+"Lab1\ti\driverlib\dl_adc12.d" \
+"Lab1\ti\driverlib\dl_aes.d" \
+"Lab1\ti\driverlib\dl_aesadv.d" \
+"Lab1\ti\driverlib\dl_common.d" \
+"Lab1\ti\driverlib\dl_comp.d" \
+"Lab1\ti\driverlib\dl_crc.d" \
+"Lab1\ti\driverlib\dl_crcp.d" \
+"Lab1\ti\driverlib\dl_dac12.d" \
+"Lab1\ti\driverlib\dl_dma.d" \
+"Lab1\ti\driverlib\dl_flashctl.d" \
+"Lab1\ti\driverlib\dl_gpamp.d" \
+"Lab1\ti\driverlib\dl_gpio.d" \
+"Lab1\ti\driverlib\dl_i2c.d" \
+"Lab1\ti\driverlib\dl_i2s.d" \
+"Lab1\ti\driverlib\dl_iwdt.d" \
+"Lab1\ti\driverlib\dl_keystorectl.d" \
+"Lab1\ti\driverlib\dl_lcd.d" \
+"Lab1\ti\driverlib\dl_lfss.d" \
+"Lab1\ti\driverlib\dl_mathacl.d" \
+"Lab1\ti\driverlib\dl_mcan.d" \
+"Lab1\ti\driverlib\dl_npu.d" \
+"Lab1\ti\driverlib\dl_opa.d" \
+"Lab1\ti\driverlib\dl_rtc.d" \
+"Lab1\ti\driverlib\dl_rtc_a.d" \
+"Lab1\ti\driverlib\dl_rtc_b.d" \
+"Lab1\ti\driverlib\dl_rtc_common.d" \
+"Lab1\ti\driverlib\dl_scratchpad.d" \
+"Lab1\ti\driverlib\dl_spgss.d" \
+"Lab1\ti\driverlib\dl_spi.d" \
+"Lab1\ti\driverlib\dl_tamperio.d" \
+"Lab1\ti\driverlib\dl_timer.d" \
+"Lab1\ti\driverlib\dl_timera.d" \
+"Lab1\ti\driverlib\dl_timerb.d" \
+"Lab1\ti\driverlib\dl_timerg.d" \
+"Lab1\ti\driverlib\dl_trng.d" \
+"Lab1\ti\driverlib\dl_uart.d" \
+"Lab1\ti\driverlib\dl_unicomm.d" \
+"Lab1\ti\driverlib\dl_unicommi2cc.d" \
+"Lab1\ti\driverlib\dl_unicommi2ct.d" \
+"Lab1\ti\driverlib\dl_unicommspi.d" \
+"Lab1\ti\driverlib\dl_unicommuart.d" \
+"Lab1\ti\driverlib\dl_vref.d" \
+"Lab1\ti\driverlib\dl_wwdt.d" 
 
 C_SRCS__QUOTED += \
 "../Lab1/ti/driverlib/dl_adc12.c" \

@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 SYSCFG_SRCS += \
 ../Lab1/empty.syscfg 
@@ -9,7 +11,7 @@ SYSCFG_SRCS += \
 C_SRCS += \
 ../Lab1/empty.c \
 ./ti_msp_dl_config.c \
-/home/Kiki/ti/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/gcc/startup_mspm0g350x_gcc.c 
+C:/ti/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/gcc/startup_mspm0g350x_gcc.c 
 
 GEN_CMDS += \
 ./device_linker.lds 
@@ -38,7 +40,7 @@ GEN_MISC_FILES += \
 ./Event.dot 
 
 OBJS__QUOTED += \
-"Lab1/empty.o" \
+"Lab1\empty.o" \
 "ti_msp_dl_config.o" \
 "startup_mspm0g350x_gcc.o" 
 
@@ -48,7 +50,7 @@ GEN_MISC_FILES__QUOTED += \
 "Event.dot" 
 
 C_DEPS__QUOTED += \
-"Lab1/empty.d" \
+"Lab1\empty.d" \
 "ti_msp_dl_config.d" \
 "startup_mspm0g350x_gcc.d" 
 
@@ -60,7 +62,7 @@ GEN_FILES__QUOTED += \
 C_SRCS__QUOTED += \
 "../Lab1/empty.c" \
 "./ti_msp_dl_config.c" \
-"/home/Kiki/ti/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/gcc/startup_mspm0g350x_gcc.c" 
+"C:/ti/mspm0_sdk_2_11_00_07/source/ti/devices/msp/m0p/startup_system_files/gcc/startup_mspm0g350x_gcc.c" 
 
 SYSCFG_SRCS__QUOTED += \
 "../Lab1/empty.syscfg" 

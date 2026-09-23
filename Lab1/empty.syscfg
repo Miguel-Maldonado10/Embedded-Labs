@@ -20,7 +20,7 @@ const ProjectConfig = scripting.addModule("/ti/project_config/ProjectConfig");
  */
 
 GPIO1.$name                                 = "GG_LCD";
-GPIO1.associatedPins.create(7);
+GPIO1.associatedPins.create(9);
 GPIO1.associatedPins[0].assignedPortSegment = "Upper";
 GPIO1.associatedPins[0].$name               = "PIN_RS";
 GPIO1.associatedPins[0].assignedPort        = "PORTB";
@@ -46,6 +46,15 @@ GPIO1.associatedPins[5].assignedPin         = "19";
 GPIO1.associatedPins[6].$name               = "PIN_RW";
 GPIO1.associatedPins[6].assignedPort        = "PORTA";
 GPIO1.associatedPins[6].assignedPin         = "31";
+GPIO1.associatedPins[7].direction           = "INPUT";
+GPIO1.associatedPins[7].ioStructure         = "SD";
+GPIO1.associatedPins[7].assignedPort        = "PORTB";
+GPIO1.associatedPins[7].assignedPin         = "0";
+GPIO1.associatedPins[7].$name               = "PIN_B1";
+GPIO1.associatedPins[8].$name               = "PIN_B2";
+GPIO1.associatedPins[8].direction           = "INPUT";
+GPIO1.associatedPins[8].assignedPort        = "PORTB";
+GPIO1.associatedPins[8].assignedPin         = "6";
 
 GPIO2.$name                              = "GG_BUTTONS";
 GPIO2.associatedPins.create(2);
@@ -79,6 +88,8 @@ GPIO1.associatedPins[3].pin.$suggestSolution = "PB17";
 GPIO1.associatedPins[4].pin.$suggestSolution = "PA22";
 GPIO1.associatedPins[5].pin.$suggestSolution = "PB19";
 GPIO1.associatedPins[6].pin.$suggestSolution = "PA31";
+GPIO1.associatedPins[7].pin.$suggestSolution = "PB0";
+GPIO1.associatedPins[8].pin.$suggestSolution = "PB6";
 GPIO2.associatedPins[0].pin.$suggestSolution = "PA24";
 GPIO2.associatedPins[1].pin.$suggestSolution = "PA17";
 SYSCTL.peripheral.$suggestSolution           = "SYSCTL";
