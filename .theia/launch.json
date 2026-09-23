@@ -1,0 +1,16 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "empty_driverlib_src",
+      "type": "ccs-debug",
+      "request": "launch",
+      "projectInfo": {
+        "name": "empty_driverlib_src",
+        "resourceId": "/empty_driverlib_src"
+      }
+    }
+  ]
+}
