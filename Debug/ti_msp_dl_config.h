@@ -77,11 +77,25 @@ extern "C" {
 
 
 
+/* Defines for PWM */
+#define PWM_INST                                                           TIMA1
+#define PWM_INST_IRQHandler                                     TIMA1_IRQHandler
+#define PWM_INST_INT_IRQN                                       (TIMA1_INT_IRQn)
+#define PWM_INST_CLK_FREQ                                                1000000
+/* GPIO defines for channel 0 */
+#define GPIO_PWM_C0_PORT                                                   GPIOB
+#define GPIO_PWM_C0_PIN                                            DL_GPIO_PIN_4
+#define GPIO_PWM_C0_IOMUX                                        (IOMUX_PINCM17)
+#define GPIO_PWM_C0_IOMUX_FUNC                       IOMUX_PINCM17_PF_TIMA1_CCP0
+#define GPIO_PWM_C0_IDX                                      DL_TIMER_CC_0_INDEX
+
+
+
 /* Defines for TIMER_0 */
 #define TIMER_0_INST                                                     (TIMA0)
 #define TIMER_0_INST_IRQHandler                                 TIMA0_IRQHandler
 #define TIMER_0_INST_INT_IRQN                                   (TIMA0_INT_IRQn)
-#define TIMER_0_INST_LOAD_VALUE                                           (520U)
+#define TIMER_0_INST_LOAD_VALUE                                             (2U)
 
 
 
@@ -101,84 +115,26 @@ extern "C" {
 
 
 
-/* Defines for PIN_RS: GPIOB.20 with pinCMx 48 on package pin 19 */
-#define GPIO_GRP_0_PIN_RS_PORT                                           (GPIOB)
-#define GPIO_GRP_0_PIN_RS_PIN                                   (DL_GPIO_PIN_20)
-#define GPIO_GRP_0_PIN_RS_IOMUX                                  (IOMUX_PINCM48)
-/* Defines for PIN_D6: GPIOA.22 with pinCMx 47 on package pin 18 */
-#define GPIO_GRP_0_PIN_D6_PORT                                           (GPIOA)
-#define GPIO_GRP_0_PIN_D6_PIN                                   (DL_GPIO_PIN_22)
-#define GPIO_GRP_0_PIN_D6_IOMUX                                  (IOMUX_PINCM47)
-/* Defines for PIN_RW: GPIOA.31 with pinCMx 6 on package pin 39 */
-#define GPIO_GRP_0_PIN_RW_PORT                                           (GPIOA)
-#define GPIO_GRP_0_PIN_RW_PIN                                   (DL_GPIO_PIN_31)
-#define GPIO_GRP_0_PIN_RW_IOMUX                                   (IOMUX_PINCM6)
-/* Defines for PIN_EN: GPIOA.28 with pinCMx 3 on package pin 35 */
-#define GPIO_GRP_0_PIN_EN_PORT                                           (GPIOA)
-#define GPIO_GRP_0_PIN_EN_PIN                                   (DL_GPIO_PIN_28)
-#define GPIO_GRP_0_PIN_EN_IOMUX                                   (IOMUX_PINCM3)
-/* Defines for PIN_D4: GPIOB.16 with pinCMx 33 on package pin 4 */
-#define GPIO_GRP_0_PIN_D4_PORT                                           (GPIOB)
-#define GPIO_GRP_0_PIN_D4_PIN                                   (DL_GPIO_PIN_16)
-#define GPIO_GRP_0_PIN_D4_IOMUX                                  (IOMUX_PINCM33)
-/* Defines for PIN_D5: GPIOB.17 with pinCMx 43 on package pin 14 */
-#define GPIO_GRP_0_PIN_D5_PORT                                           (GPIOB)
-#define GPIO_GRP_0_PIN_D5_PIN                                   (DL_GPIO_PIN_17)
-#define GPIO_GRP_0_PIN_D5_IOMUX                                  (IOMUX_PINCM43)
-/* Defines for PIN_D7: GPIOB.19 with pinCMx 45 on package pin 16 */
-#define GPIO_GRP_0_PIN_D7_PORT                                           (GPIOB)
-#define GPIO_GRP_0_PIN_D7_PIN                                   (DL_GPIO_PIN_19)
-#define GPIO_GRP_0_PIN_D7_IOMUX                                  (IOMUX_PINCM45)
-/* Port definition for Pin Group GG_OCTO */
-#define GG_OCTO_PORT                                                     (GPIOB)
-
-/* Defines for OCTOLEFT: GPIOB.7 with pinCMx 24 on package pin 59 */
-// pins affected by this interrupt request:["OCTOLEFT","OCTORIGHT"]
-#define GG_OCTO_INT_IRQN                                        (GPIOB_INT_IRQn)
-#define GG_OCTO_INT_IIDX                        (DL_INTERRUPT_GROUP1_IIDX_GPIOB)
-#define GG_OCTO_OCTOLEFT_IIDX                                (DL_GPIO_IIDX_DIO7)
-#define GG_OCTO_OCTOLEFT_PIN                                     (DL_GPIO_PIN_7)
-#define GG_OCTO_OCTOLEFT_IOMUX                                   (IOMUX_PINCM24)
-/* Defines for OCTORIGHT: GPIOB.8 with pinCMx 25 on package pin 60 */
-#define GG_OCTO_OCTORIGHT_IIDX                               (DL_GPIO_IIDX_DIO8)
-#define GG_OCTO_OCTORIGHT_PIN                                    (DL_GPIO_PIN_8)
-#define GG_OCTO_OCTORIGHT_IOMUX                                  (IOMUX_PINCM25)
-/* Defines for SEG_A_PIN: GPIOA.8 with pinCMx 19 on package pin 54 */
-#define GPIO_GRP_1_SEG_A_PIN_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEG_A_PIN_PIN                                 (DL_GPIO_PIN_8)
-#define GPIO_GRP_1_SEG_A_PIN_IOMUX                               (IOMUX_PINCM19)
-/* Defines for SEG_B_PIN: GPIOB.24 with pinCMx 52 on package pin 23 */
-#define GPIO_GRP_1_SEG_B_PIN_PORT                                        (GPIOB)
-#define GPIO_GRP_1_SEG_B_PIN_PIN                                (DL_GPIO_PIN_24)
-#define GPIO_GRP_1_SEG_B_PIN_IOMUX                               (IOMUX_PINCM52)
-/* Defines for SEG_C_PIN: GPIOB.18 with pinCMx 44 on package pin 15 */
-#define GPIO_GRP_1_SEG_C_PIN_PORT                                        (GPIOB)
-#define GPIO_GRP_1_SEG_C_PIN_PIN                                (DL_GPIO_PIN_18)
-#define GPIO_GRP_1_SEG_C_PIN_IOMUX                               (IOMUX_PINCM44)
-/* Defines for SEG_D_PIN: GPIOA.18 with pinCMx 40 on package pin 11 */
-#define GPIO_GRP_1_SEG_D_PIN_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEG_D_PIN_PIN                                (DL_GPIO_PIN_18)
-#define GPIO_GRP_1_SEG_D_PIN_IOMUX                               (IOMUX_PINCM40)
-/* Defines for SEG_E_PIN: GPIOA.24 with pinCMx 54 on package pin 25 */
-#define GPIO_GRP_1_SEG_E_PIN_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEG_E_PIN_PIN                                (DL_GPIO_PIN_24)
-#define GPIO_GRP_1_SEG_E_PIN_IOMUX                               (IOMUX_PINCM54)
-/* Defines for SEG_G_PIN: GPIOB.15 with pinCMx 32 on package pin 3 */
-#define GPIO_GRP_1_SEG_G_PIN_PORT                                        (GPIOB)
-#define GPIO_GRP_1_SEG_G_PIN_PIN                                (DL_GPIO_PIN_15)
-#define GPIO_GRP_1_SEG_G_PIN_IOMUX                               (IOMUX_PINCM32)
-/* Defines for SEG_F_PIN: GPIOA.17 with pinCMx 39 on package pin 10 */
-#define GPIO_GRP_1_SEG_F_PIN_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEG_F_PIN_PIN                                (DL_GPIO_PIN_17)
-#define GPIO_GRP_1_SEG_F_PIN_IOMUX                               (IOMUX_PINCM39)
-/* Defines for SEV_SEG_1: GPIOA.15 with pinCMx 37 on package pin 8 */
-#define GPIO_GRP_1_SEV_SEG_1_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEV_SEG_1_PIN                                (DL_GPIO_PIN_15)
-#define GPIO_GRP_1_SEV_SEG_1_IOMUX                               (IOMUX_PINCM37)
-/* Defines for SEV_SEG_2: GPIOA.25 with pinCMx 55 on package pin 26 */
-#define GPIO_GRP_1_SEV_SEG_2_PORT                                        (GPIOA)
-#define GPIO_GRP_1_SEV_SEG_2_PIN                                (DL_GPIO_PIN_25)
-#define GPIO_GRP_1_SEV_SEG_2_IOMUX                               (IOMUX_PINCM55)
+/* Defines for HB_IN2: GPIOA.8 with pinCMx 19 on package pin 54 */
+#define GPIO_GRP_0_HB_IN2_PORT                                           (GPIOA)
+#define GPIO_GRP_0_HB_IN2_PIN                                    (DL_GPIO_PIN_8)
+#define GPIO_GRP_0_HB_IN2_IOMUX                                  (IOMUX_PINCM19)
+/* Defines for HB_IN1: GPIOB.9 with pinCMx 26 on package pin 61 */
+#define GPIO_GRP_0_HB_IN1_PORT                                           (GPIOB)
+#define GPIO_GRP_0_HB_IN1_PIN                                    (DL_GPIO_PIN_9)
+#define GPIO_GRP_0_HB_IN1_IOMUX                                  (IOMUX_PINCM26)
+/* Defines for IN_0: GPIOB.7 with pinCMx 24 on package pin 59 */
+#define GPIO_GRP_0_IN_0_PORT                                             (GPIOB)
+#define GPIO_GRP_0_IN_0_PIN                                      (DL_GPIO_PIN_7)
+#define GPIO_GRP_0_IN_0_IOMUX                                    (IOMUX_PINCM24)
+/* Defines for IN_1: GPIOB.6 with pinCMx 23 on package pin 58 */
+#define GPIO_GRP_0_IN_1_PORT                                             (GPIOB)
+#define GPIO_GRP_0_IN_1_PIN                                      (DL_GPIO_PIN_6)
+#define GPIO_GRP_0_IN_1_IOMUX                                    (IOMUX_PINCM23)
+/* Defines for IN_2: GPIOB.21 with pinCMx 49 on package pin 20 */
+#define GPIO_GRP_0_IN_2_PORT                                             (GPIOB)
+#define GPIO_GRP_0_IN_2_PIN                                     (DL_GPIO_PIN_21)
+#define GPIO_GRP_0_IN_2_IOMUX                                    (IOMUX_PINCM49)
 
 
 /* clang-format on */
@@ -187,6 +143,7 @@ void SYSCFG_DL_init(void);
 void SYSCFG_DL_initPower(void);
 void SYSCFG_DL_GPIO_init(void);
 void SYSCFG_DL_SYSCTL_init(void);
+void SYSCFG_DL_PWM_init(void);
 void SYSCFG_DL_TIMER_0_init(void);
 void SYSCFG_DL_I2C_0_init(void);
 
